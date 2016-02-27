@@ -1,4 +1,4 @@
-
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 
 
 .parallax {
@@ -47,8 +47,23 @@
  .overview{
    color: black;
    text-align: center;
+   font-family: 'Raleway', sans-serif;
  }
 
+ .portfolio{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .portfolio-item{
+   height:20vw;
+   width:20vw;
+   background-color: green;
+   border: 1px solid black;
+   display: inline-block;
+   margin: 0 2vw;
+ }
 
 
  /* Debugger styles - used to show the effect
