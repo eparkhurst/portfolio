@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 
-
+h1{
+  text-align: center;
+}
 .parallax {
    height: 500px; /* fallback for older browsers */
    height: 100vh;
@@ -51,20 +53,22 @@
  }
 
  .portfolio{
+   margin-top: 20vh;
    display: flex;
    justify-content: center;
    align-items: center;
  }
 
  .portfolio-item{
-   height:20vw;
-   width:20vw;
+   width:30vw;
    background-color: green;
    border: 1px solid black;
    display: inline-block;
-   margin: 0 2vw;
+   /*margin: 0 2vw;*/
  }
-
+ .portfolio-item img{
+   width:100%;
+ }
 
  /* Debugger styles - used to show the effect
  --------------------------------------------- */
