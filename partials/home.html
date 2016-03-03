@@ -76,29 +76,48 @@
             <div class="" ng-click="toggle()">
               <div class="panel panel-body center-block" >
                 <h2>Treatment Counselor</h2>
-                <div ng-show="tc" tclass="description">
+                <div ng-show="tc" class="description">
+                  <img class="thumbnail" src="../imgs/shiloh.jpg" alt="" />
                   <p>
-                    i worked for 2 years as a treatment counselor. Blah Blah Blha
+                    I spent 2 years working with homeless teenagers as a treatment counselor. To date is the most intense thing I have ever done. In many ways it shaped who I am today.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6" ng-click="oc = !oc">
             <div class="panel panel-body center-block">
               <h2>Organic Chemist</h2>
+              <div ng-show="oc" class="description">
+                <img class="thumbnail" src="../imgs/lab.jpg" alt="" />
+                <p>
+                  I worked for 2 almost 2 years as an organic chemist at an environmental testing company.
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 ">
+          <div class="col-md-6" ng-click="sb = !sb">
             <div class="panel panel-body center-block">
               <h2>Ski Bum</h2>
+              <div ng-show="sb" class="description">
+                <img class="thumbnail" src="../imgs/snow.jpg" alt="" />
+                <p>
+                  I lived in Aspen for a winter after graduating from college.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6" ng-click="travel = !travel">
             <div class="panel panel-body center-block">
               <h2>Taveler</h2>
+              <div ng-show="travel" tclass="description">
+                <img class="thumbnail" src="../imgs/tikal.jpg" alt="" />
+                <p>
+                  I have a slight travel problem. To date I have been to New Zealand, Australia, Fiji, a good chunk of western Europe and every country in Central America except El Salvador
+                </p>
+              </div>
             </div>
           </div>
         </div>

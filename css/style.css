@@ -26,8 +26,8 @@ a:focus {
 
  .parallax__group {
    position: relative;
-   height: 500px; /* fallback for older browsers */
-   height: 100vh;
+   min-height: 500px; /* fallback for older browsers */
+   min-height: 100vh;
    transform-style: preserve-3d;
  }
 
@@ -96,7 +96,9 @@ a:focus {
  }
 
  .panel{
-   width:400px;
+   width:500px;
+   margin-bottom: 75px;
+   background-color: #bfbfbf;
  }
 
  .headshot{
@@ -113,6 +115,15 @@ a:focus {
  .header{
    margin: auto;
    width:720px;
+ }
+ .thumbnail{
+   float: left;
+   height: 170px;
+   width: 170px;
+   margin-right: 10px;
+ }
+ #group5 h1{
+   margin-bottom: 100px;
  }
  /* Debugger styles - used to show the effect
  --------------------------------------------- */
