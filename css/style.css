@@ -3,6 +3,19 @@
 h1{
   text-align: center;
 }
+/*a:hover,
+a:focus {
+  text-decoration: none;
+  color:#696E74;
+}
+.tpl6 .bg
+{
+	height:100%;
+	width:100%;
+	background-color:#00b3fe;
+	background-color:rgba(0,179,254,.9);
+	text-align:center;
+}*/
 .parallax {
    height: 500px; /* fallback for older browsers */
    height: 100vh;
@@ -60,16 +73,47 @@ h1{
  }
 
  .portfolio-item{
-   width:30vw;
-   background-color: green;
-   border: 1px solid black;
+   width:370px;
+   margin-top:10px;
+   /*border: 1px solid black;*/
    display: inline-block;
-   /*margin: 0 2vw;*/
+   position: relative;
  }
  .portfolio-item img{
    width:100%;
  }
+ .cover{
+   display: none;
+   position: absolute;
+   left: 0;
+   top: 0;
+   z-index: 4;
+   background-color: rgba(0, 160, 84, 0.8);;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   color:white;
+ }
 
+ .panel{
+   width:400px;
+ }
+
+ .headshot{
+   width:20vw;
+   height: 20vw;
+   border-radius: 50%;
+ }
+ .detail-page{
+   text-align: center;
+ }
+ .detail-page p{
+   font-size: 24px;
+ }
+ .header{
+   margin: auto;
+   width:720px;
+ }
  /* Debugger styles - used to show the effect
  --------------------------------------------- */
 
@@ -99,7 +143,7 @@ h1{
  --------------------------------------------- */
 
  body, html {
-   overflow: hidden;
+   /*overflow: hidden;*/
  }
 
  body {
@@ -125,7 +169,12 @@ h1{
    color:white;
  }
 
-
+ .home{
+   text-align: left;
+ }
+ .home a{
+    text-decoration: none;
+ }
 
  /* style the groups
  --------------------------------------------- */
@@ -149,7 +198,7 @@ h1{
    z-index: 4; /* slide over group 2 and 4 */
  }
  #group3 .parallax__layer--base {
-   background: white;
+   background: #999999;
  }
 
  #group4 {

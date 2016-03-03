@@ -5,17 +5,27 @@ angular.module('Portfolio', ['ui.router'])
     .state('home', {
       url: "/home",
       templateUrl: "partials/home.html",
-      controller: 'HomeController'
+      controller: 'HomeController',
+      css: 'css/style.css'
     })
     .state('other', {
       url: "/other",
       templateUrl: "partials/other.html"
     })
-    .state('state2.list', {
-      url: "/list",
-      templateUrl: "partials/state2.list.html",
-      controller: function($scope) {
-        $scope.things = ["A", "Set", "Of", "Things"];
-      }
-    });
+    .state('gitUp', {
+      url: "/gitup",
+      templateUrl: "partials/gitup.html",
+      controller: 'HomeController',
+      css: 'css/detail.css'
+    })
+    .state('moviepicker', {
+      url: "/moviepicker",
+      templateUrl: "partials/moviepicker.html",
+      controller: 'DetailController'
+    })
+    .state('brewsbrothers', {
+      url: "/brewsbrothers",
+      templateUrl: "partials/brewsbrothers.html",
+      controller: 'DetailController'
+    })
 });

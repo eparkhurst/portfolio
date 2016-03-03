@@ -1,7 +1,11 @@
 <div class="parallax">
   <div id="group2" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
-      <div class="title">{{phrase}}</div>
+      <div ng-click="toggle()" class="title">
+        <img class="headshot" src="../imgs/elipicsquare.jpg" alt="Elijah Parkhurst" />
+        <h1>Elijah Parkhurst</h1>
+      </div>
+
     </div>
     <div class="parallax__layer parallax__layer--back">
       <div class="title"></div>
@@ -19,43 +23,98 @@
       <a href="https://www.linkedin.com/in/eliparkhurst" target="_blank" class="btn btn-default"><span class="fa fa-linkedin-square"> Linked In</a>
       <a href="https://github.com/eparkhurst" target="_blank" class="btn btn-default"><span class="fa fa-github-square"></span> Git Hub</a>
       <a href="mailto:eli.parkhurst@gmail.com" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> Email</a>
+      <a href="/Resume-ElijahParkhurst.pdf" class="btn btn-default"><span class="fa fa-file-pdf-o"></span> Resume</a>
     </div>
   </div>
   <div id="group4" class="parallax__group">
     <div class="parallax__layer parallax__layer--base ">
       <h1>Projects</h1>
-      <div class="portfolio">
-        <a href="#"><div class="portfolio-item"><img src="imgs/gitup.png" alt="" /></div></a>
-        <a href="#"><div class="portfolio-item"><img src="imgs/brewsbrothers.png" alt="" /></div></a>
-        <a href="#"><div class="portfolio-item"><img src="imgs/moviepicker.png" alt="" /></div></a>
+      <div class="container portfolio">
+        <div class="row">
+          <div class="portfolio-item col-md-4" ng-mouseover="cover={'display':'block'}" ng-mouseleave="cover={'display':'none'}">
+            <a href="#/gitup">
+                <img src="imgs/gitup.png" alt="image of gitup" />
+              <div ng-style="cover" class="cover">
+                <h3>Git Up</h3>
+              </div>
+            </a>
+          </div>
+          <div class="portfolio-item col-md-4" ng-mouseover="cover2={'display':'block'}" ng-mouseleave="cover2={'display':'none'}">
+            <a href="#/brewsbrothers">
+                <img src="imgs/brewsbrothers.png" alt="image of brews brothers" />
+              <div ng-style="cover2" class="cover">
+                <h3>Brews Brothers</h3>
+              </div>
+            </a>
+          </div>
+          <div class="portfolio-item col-md-4" ng-mouseover="cover3={'display':'block'}" ng-mouseleave="cover3={'display':'none'}">
+            <a href="#/moviepicker">
+                <img src="imgs/moviepicker.png" alt="image of moviepicker" />
+              <div ng-style="cover3" class="cover">
+                <h3>Git Up</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- <a href="#/brewsbrothers"><div class="portfolio-item"><img src="imgs/brewsbrothers.png" alt="" /></div></a>
+        <a href="#/moviepicker"><div class="portfolio-item"><img src="imgs/moviepicker.png" alt="" /></div></a> -->
       </div>
     </div>
     <div class="parallax__layer parallax__layer--back">
-      <div class="title">Background Layer</div>
+      <div class="title"></div>
     </div>
     <div class="parallax__layer parallax__layer--deep">
-      <div class="title">Deep Background Layer</div>
+      <div class="title"></div>
     </div>
   </div>
   <div id="group5" class="parallax__group">
-    <div class="parallax__layer parallax__layer--fore">
-      <div class="title">Foreground Layer</div>
-    </div>
     <div class="parallax__layer parallax__layer--base">
-      <div class="title">Group 5</div>
+      <div class="container-fluid">
+        <h1>Past Lives</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="" ng-click="toggle()">
+              <div class="panel panel-body center-block" >
+                <h2>Treatment Counselor</h2>
+                <div ng-show="tc" tclass="description">
+                  <p>
+                    i worked for 2 years as a treatment counselor. Blah Blah Blha
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="panel panel-body center-block">
+              <h2>Organic Chemist</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="panel panel-body center-block">
+              <h2>Ski Bum</h2>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="panel panel-body center-block">
+              <h2>Taveler</h2>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div id="group6" class="parallax__group">
     <div class="parallax__layer parallax__layer--back">
-      <div class="title">background</div>
     </div>
     <div class="parallax__layer parallax__layer--base">
-      <div class="title">Base Layer</div>
+      <div class="title"></div>
     </div>
   </div>
   <div id="group7" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
-      <div class="title">Base Layer</div>
+      <div class="title"></div>
     </div>
   </div>
 </div>
