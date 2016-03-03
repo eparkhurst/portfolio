@@ -1,11 +1,12 @@
 <div class="parallax">
   <div id="group2" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
-      <div ng-click="toggle()" class="title">
-        <img class="headshot" src="../imgs/elipicsquare.jpg" alt="Elijah Parkhurst" />
-        <h1>Elijah Parkhurst</h1>
+      <div class="topcon">
+        <div  class="top">
+          <h1>Elijah Parkhurst</h1>
+          <h2>FullStack Developer</h2>
+        </div>
       </div>
-
     </div>
     <div class="parallax__layer parallax__layer--back">
       <div class="title"></div>
@@ -28,10 +29,14 @@
   </div>
   <div id="group4" class="parallax__group">
     <div class="parallax__layer parallax__layer--base ">
-      <h1>Projects</h1>
+      <div class="topcon">
+        <div class="top-p">
+          <h1>Projects</h1>
+        </div>
+      </div>
       <div class="container portfolio">
         <div class="row">
-          <div class="portfolio-item col-md-4" ng-mouseover="cover={'display':'block'}" ng-mouseleave="cover={'display':'none'}">
+          <div class="portfolio-item col-md-4" ng-mouseover="cover={'display':'none'}" ng-mouseleave="cover={'display':'block'}">
             <a href="#/gitup">
                 <img src="imgs/gitup.png" alt="image of gitup" />
               <div ng-style="cover" class="cover">
@@ -39,7 +44,7 @@
               </div>
             </a>
           </div>
-          <div class="portfolio-item col-md-4" ng-mouseover="cover2={'display':'block'}" ng-mouseleave="cover2={'display':'none'}">
+          <div class="portfolio-item col-md-4" ng-mouseover="cover2={'display':'none'}" ng-mouseleave="cover2={'display':'block'}">
             <a href="#/brewsbrothers">
                 <img src="imgs/brewsbrothers.png" alt="image of brews brothers" />
               <div ng-style="cover2" class="cover">
@@ -47,11 +52,11 @@
               </div>
             </a>
           </div>
-          <div class="portfolio-item col-md-4" ng-mouseover="cover3={'display':'block'}" ng-mouseleave="cover3={'display':'none'}">
+          <div class="portfolio-item col-md-4" ng-mouseover="cover3={'display':'none'}" ng-mouseleave="cover3={'display':'block'}">
             <a href="#/moviepicker">
                 <img src="imgs/moviepicker.png" alt="image of moviepicker" />
               <div ng-style="cover3" class="cover">
-                <h3>Git Up</h3>
+                <h3>Movie Picker</h3>
               </div>
             </a>
           </div>
@@ -70,11 +75,16 @@
   <div id="group5" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
       <div class="container-fluid">
-        <h1>Past Lives</h1>
+        <div class="topcon">
+          <div class="top-p">
+            <h1>Past Lives</h1>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-6">
             <div class="" ng-click="toggle()">
               <div class="panel panel-body center-block" >
+                <h2><span class="fa fa-fire-extinguisher"></span></h2>
                 <h2>Treatment Counselor</h2>
                 <div ng-show="tc" class="description">
                   <img class="thumbnail" src="../imgs/shiloh.jpg" alt="" />
@@ -87,11 +97,12 @@
           </div>
           <div class="col-md-6" ng-click="oc = !oc">
             <div class="panel panel-body center-block">
+              <h2><span class="fa fa-flask"></span></h2>
               <h2>Organic Chemist</h2>
               <div ng-show="oc" class="description">
                 <img class="thumbnail" src="../imgs/lab.jpg" alt="" />
                 <p>
-                  I worked for 2 almost 2 years as an organic chemist at an environmental testing company.
+                  I worked for almost 2 years as an organic chemist at an environmental testing company.
                 </p>
               </div>
             </div>
@@ -100,6 +111,7 @@
         <div class="row">
           <div class="col-md-6" ng-click="sb = !sb">
             <div class="panel panel-body center-block">
+              <h2> <span class="glyphicon glyphicon-tree-conifer"></span></h2>
               <h2>Ski Bum</h2>
               <div ng-show="sb" class="description">
                 <img class="thumbnail" src="../imgs/snow.jpg" alt="" />
@@ -111,6 +123,7 @@
           </div>
           <div class="col-md-6" ng-click="travel = !travel">
             <div class="panel panel-body center-block">
+              <h2><span class="glyphicon glyphicon-globe"></span></h2>
               <h2>Taveler</h2>
               <div ng-show="travel" tclass="description">
                 <img class="thumbnail" src="../imgs/tikal.jpg" alt="" />
